@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 5000;  
 
 app.use(cors({
-    origin: "https://coupon-site-frontend.vercel.app/",
+    origin: "https://couponhuntter.vercel.app/",
 }));
 app.use(express.json())
 
