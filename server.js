@@ -5,7 +5,7 @@ import mongoose from 'mongoose';
 
 
 const app = express();
-const port = process.env.PORT  
+const port = process.env.PORT || 5000;  
 
 app.use(cors({
     origin: "*",
@@ -213,6 +213,6 @@ app.get('/tab_filters/:filter_name', async (req, res) => {
    
 })
 
-app.listen(port || 5000, () => {
-    console.log("server up and running")
+app.listen(port, () => {
+    console.log("server up and running at ")
 })
